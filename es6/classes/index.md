@@ -9,6 +9,8 @@ ES6 Classes will feel very natural for those with experience writing Object-Orie
 
 ```javascript
 class Beer {
+  sell(location) {
+  }
 }
 
 class SpottedCow extends Beer {
@@ -16,6 +18,11 @@ class SpottedCow extends Beer {
     this.deliciousness = 50;
     this.locations = 'Wisconsin';
     this.name = 'Spotted Cow';
+  }
+  sell(location) {
+    if(location !== 'Wisconsin') {
+      throw new JailTimeError();
+    }
   }
 }
 
@@ -25,9 +32,18 @@ class MillerLite extends Beer {
     this.locations = 'anywhere';
     this.name = 'Miller Lite';
   }
+  sell(location) {
+    if(Location.hasSportsTeam(location)) {
+      return true;
+    }
+    // Enh, we'll sell anywhere
+    return true;
+  }
 }
 
 let beer = new SpottedCow();
 
 console.log('I am drinking a delicious', beer.name, 'that is available', beer.location);
+
+beer.sell();
 ```
