@@ -7,7 +7,8 @@ Forms are the cornerstone of any real app. In Angular 2, forms have changed quit
 
 Where we used to use `ngModel` and map to our internal data model, in Angular 2 we more explicitly build forms and form controls.
 
-While it feels like more code to write, in practice it's easier to reason about than with v1.
+While it feels like more code to write, in practice it's easier to reason about than with v1, and we no longer
+have to deal with frustrating ngModel and scope data problems.
 
 ## Simple Form
 
@@ -30,7 +31,7 @@ And the corresponding component JS:
 ```javascript
 
 import {Component, Template, Parent} from 'angular2/angular2'
-import {FormBuilder, Validators, FormDirectives, CongrolGroup} from 'angular2/forms';
+import {FormBuilder, Validators, FormDirectives, ControlGroup} from 'angular2/forms';
 
 @Component({
   selector: 'login-page'
@@ -67,6 +68,15 @@ When we run this, we are shown a simple login form with email and password:
 
 The FormBuilder from the example above makes it easy for us to specify form controls and the various
 validators we might want to apply to certain controls.
+
+In the example above, we are creating two inputs, an `email` and `password` field:
+
+```javascript
+this.loginForm = fb.group({
+  email: ['', Validators.required],
+  password: ['', Validators.required],
+});
+```
 
 ## ControlGroup
 
@@ -115,3 +125,21 @@ this.loginForm = fb.group({
   password: ['', Validators.required],
 });
 ```
+
+## Handling form values
+
+We can easily get the simple Javascript object value of our form, or the value of an individual control:
+
+```javascript
+doLogin(event) {
+  // Show the value of the form
+  var formData = this.loginForm.value;
+  // { email: 'blah@blah.net', password: 'imnottelling1' }
+
+  // Or, grab the value of one control:
+  var email = this.loginForm.controls.email.value
+
+  event.preventDefault();
+}
+```
+
