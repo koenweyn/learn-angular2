@@ -21,5 +21,6 @@ Let's start with a very simple template that shows our name and our favorite thi
 
 ## Rendering
 
-To render a string, we can use the standard double-curly
+To render a string, we can use the standard double-curly syntax:
+
 
