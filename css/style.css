@@ -45,6 +45,7 @@ h3 {
   position: absolute;
   right: 45px;
   top: 45px;
+  z-index: 2;
 }
 
 #sidebar li {
