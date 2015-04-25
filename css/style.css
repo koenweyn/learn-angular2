@@ -1,4 +1,55 @@
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url('http://code.ionicframework.com/assets/fonts/28882F_0_0.eot');
+  src: url('http://code.ionicframework.com/assets/fonts/28882F_0_0.eot?#iefix') format('embedded-opentype'), url('http://code.ionicframework.com/assets/fonts/28882F_0_0.woff') format('woff'), url('http://code.ionicframework.com/assets/fonts/28882F_0_0.ttf') format('truetype'); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url('http://code.ionicframework.com/assets/fonts/28882F_1_0.eot');
+  src: url('http://code.ionicframework.com/assets/fonts/28882F_1_0.eot?#iefix') format('embedded-opentype'), url('http://code.ionicframework.com/assets/fonts/28882F_1_0.woff') format('woff'), url('http://code.ionicframework.com/assets/fonts/28882F_1_0.ttf') format('truetype'); }
+
+@font-face {
+  font-family: 'AvenirNextLTPro-UltLt';
+  src: url('http://code.ionicframework.com/assets/fonts/29CC36_0_0.eot');
+  src: url('http://code.ionicframework.com/assets/fonts/29CC36_0_0.eot?#iefix') format('embedded-opentype'), url('http://code.ionicframework.com/assets/fonts/29CC36_0_0.woff') format('woff'), url('http://code.ionicframework.com/assets/fonts/29CC36_0_0.ttf') format('truetype'); }
+
+/* Frieght Text Pro */
+@font-face {
+  font-family: 'FreightTextProBook-Regular';
+  src: url('http://code.ionicframework.com/assets/fonts/29D26A_0_0.eot');
+  src: url('http://code.ionicframework.com/assets/fonts/29D26A_0_0.eot?#iefix') format('embedded-opentype'), url('http://code.ionicframework.com/assets/fonts/29D26A_0_0.woff') format('woff'), url('http://code.ionicframework.com/assets/fonts/29D26A_0_0.ttf') format('truetype'); }
+
+@font-face {
+  font-family: 'FreightTextProMedium-Regular';
+  src: url('http://code.ionicframework.com/assets/fonts/29D26A_1_0.eot');
+  src: url('http://code.ionicframework.com/assets/fonts/29D26A_1_0.eot?#iefix') format('embedded-opentype'), url('http://code.ionicframework.com/assets/fonts/29D26A_1_0.woff') format('woff'), url('http://code.ionicframework.com/assets/fonts/29D26A_1_0.ttf') format('truetype'); }
+
 body {
   font-family: Helvetica, arial, sans-serif;
   padding: 40px 0;
+  font-family: "AvenirNextLTPro-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+
+#sidebar li {
+  list-style: none;
+}
+
+#footer {
+  margin: auto;
+  max-width: 800px;
+  border-top: 1px solid #eee;
+  padding: 30px;
+  margin-top: 20px;
+  text-align: center;
 }

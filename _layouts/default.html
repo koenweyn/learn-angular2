@@ -7,16 +7,19 @@
 
     <div class="container">
       <div class="row">
-        <div class="one-third column">
+        <div class="three columns">
           {% include sidebar.html %}
         </div>
-        <div class="two-thirds column">
-          <h1>{{page.title}}</h1>
+        <div class="nine columns">
+          <h3>{{page.title}}</h3>
           {{ content }}
         </div>
       </div>
     </div>
     
+    <footer id="footer">
+      Built by the <a href="http://ionicframework.com/">Ionic</a> Team.
+    </footer>
 
   </body>
 </html>
