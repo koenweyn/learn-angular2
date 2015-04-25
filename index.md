@@ -18,7 +18,7 @@ years building our entire business on Angular. When Angular 2 was announced, we 
 What we found when we started building with Angular 2, though, was something beyond our wildest dreams: a faster, more powerful, cleaner, and easier to use tool than we had with Angular 1. We found a tool that embraced future web standards and brought ES6 to more developers around the world.
 
 We realized that Angular 2 would make it *easier* to use Ionic, not harder. That it would give us performance gains
-we desperately needed to push forward our goal of making the web win on mobile. That it would make it easier to write clean, testable code that would run on more devices and platforms.
+we desperately needed to push forward our goal of making the web win on mobile. That it would make it easier to write clean, testable code that would run on more devices and platforms. That it would help us empower more web developers to build great mobile apps.
 
 We knew we had to work to make sure the ngCommunity transitioned from Angular 1 to Angular 2 as quickly and cleanly as possible, so we started this site to help with the transition.
 
