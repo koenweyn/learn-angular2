@@ -2,6 +2,7 @@
 layout: default
 title: Components
 edit_link: https://github.com/driftyco/learn-angular2/edit/gh-pages/components/index.md
+tweet: "How to use components in Angular 2"
 ---
 
 In Angular 2, Components are the main way we build and specify elements and logic on the page.
