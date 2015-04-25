@@ -5,7 +5,9 @@ edit_link: https://github.com/driftyco/learn-angular2/edit/gh-pages/es6/classes/
 tweet: "Understanding let and var in ES6"
 ---
 
-In ES6, we have a new way of specifying variables: `let1`
+In ES6, we have a new way of specifying variables: `let`
+
+## Var
 
 Before ES6, we only had `var` which would create a variable scoped to the nearest function.
 
