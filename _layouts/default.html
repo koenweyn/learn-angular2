@@ -4,6 +4,11 @@
   {% include head.html %}
 
   <body>
+    {% if page.edit_link %}
+    <div id="improve">
+      <a href="{{page.edit_link}}">Suggest improvements</a>
+    </div>
+    {% endif %}
 
     <div class="container">
       <div class="row">
@@ -18,7 +23,9 @@
     </div>
     
     <footer id="footer">
-      Built by the <a href="http://ionicframework.com/">Ionic</a> Team.
+      <div class="container">
+        Built by the <a href="http://ionicframework.com/">Ionic</a> Team. Licensed under Apache 2.
+      </div>
     </footer>
 
   </body>

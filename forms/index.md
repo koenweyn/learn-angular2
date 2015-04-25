@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Forms
+edit_link: https://github.com/driftyco/learn-angular2/edit/gh-pages/forms/index.md
 ---
 
 Forms are the cornerstone of any real app. In Angular 2, forms have changed quite a bit from their v1 counterpart.
