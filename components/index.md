@@ -15,7 +15,7 @@ are combined into Components.
 Let's start with a very simple component that lists out our name:
 
 ```javascript
-import {Component, Template} from 'angular2/angular2'
+import {Component, View} from 'angular2/angular2'
 
 @Component({
   selector: 'my-component'
